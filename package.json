@@ -1,5 +1,6 @@
 {
   "name": "nuxt-app",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -19,6 +20,5 @@
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3"
-  },
-  "version": "1.0.0"
+  }
 }
