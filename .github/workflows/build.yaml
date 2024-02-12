@@ -28,10 +28,10 @@ jobs:
         uses: actions/cache@v3
         with:
           path: |
-            .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/bun.lockb') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+            .nuxt/cache
+          key: ${{ runner.os }}-nuxtjs-${{ hashFiles('**/bun.lockb') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/bun.lockb') }}-
+            ${{ runner.os }}-nuxtjs-${{ hashFiles('**/bun.lockb') }}-
       - name: Install Deps
         run: bun install
       - name: Run Lint
